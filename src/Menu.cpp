@@ -100,7 +100,8 @@ void Menu::handleDeleteTransaction() {
     int id;
     cout << "Enter transaction ID to delete: ";
     cin >> id;
-
+    cin.clear();
+    fflush(stdin);
     if (wallet_.deleteTransaction(id)) {
         cout << "Transaction deleted." << endl;
     } else {
