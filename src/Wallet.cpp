@@ -29,6 +29,7 @@ bool Wallet::deleteTransaction(int transactionId) {
             transactions_.erase(transactions_.begin() + i);
             return true;
         }
+        else{i++;}
     }
     return false;
 }
