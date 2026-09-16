@@ -17,6 +17,7 @@ inline bool looksLikeNumber(const string& input) {
     if (input.empty()) {
         return false;
     }
+    int firstChar=input[0];
     return isdigit(firstChar);
 }
 
