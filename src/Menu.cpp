@@ -46,6 +46,8 @@ void Menu::run() {
                 break;
             default:
                 cout << "Invalid choice, try again." << endl;
+                cin.clear();
+                fflush(stdin);
         }
     }
 }
