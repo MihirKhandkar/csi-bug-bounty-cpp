@@ -15,7 +15,7 @@ void Wallet::addTransaction(TransactionType type, double amount, const string& d
 
     if (type == TransactionType::CREDIT) {
         balance_ += amount;
-    } else {
+    } else if(type == TransactionType::DEBIT) {
         balance_ -= amount;
     }
 
